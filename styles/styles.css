@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+#main-container {
+    width: 400px;
+}
+
+.js {
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    width: 350px;
+    flex-direction: column;
+    padding: 50px;
+    margin: 50px;
+}
+
+
+.nameSurDate {
+    display: flex;
+    flex-direction: column;
+}
+
+.tatleNameSurDate {
+    margin: 5px;
+    margin-bottom: 5px;
+}
+
+.sexWomMen {
+    margin: 5px;
+    margin-bottom: 5px;
+}
+
+.cityLife {
+    margin: 5px;
+    margin-bottom: 5px;
+}
+
+.addressStreet {
+    margin: 5px;
+    margin-bottom: 5px;
+}
+
+.leng {
+    margin: 5px;
+    margin-bottom: 5px;
+}
+
+.buttonSave {
+    width: 100px;
+    margin: 5px;
+    margin-bottom: 5px;
+}
+
+div table {
+    margin: 50px;
+}
+ 
+
+table tbody  {
+    border: 2px solid black;
+}
+
+tbody td {
+    padding: 10px;
+}
