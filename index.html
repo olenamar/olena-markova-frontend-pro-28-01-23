@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <title>Document</title>
+    <style></style>
+  </head>
+  <body>
+    <div id="main-container">
+        <form>
+            <div class="js">
+                <div class="nameSurDate">
+                    <label class="tatleNameSurDate">Name
+                        <input type="text" class="nameImput" name="Name" placeholder="Name...">
+                    </label>
+                    <label class="tatleNameSurDate">Surname
+                        <input type="text" class="SurnameImput" name="Surname" placeholder="Surname...">
+                    </label>
+                    <label class="tatleNameSurDate">Date of Birth
+                        <input type="date" class="dateImput" name="Date">
+                    </label>
+                </div>
+                <div class="sexWomMen">
+                    <label>Sex
+                        <input type="radio" id="radioW" class="radio" name="Sex" value="woman">
+                        <label for="radioW">Women</label>
+                        <input type="radio" id="radioM" class="radio" name="Sex" value="man">
+                        <label for="radioM" >Man</label>
+                    </label>
+                </div>
+                <div class="cityLife">
+                    <label>City
+                        <select class="selectCity" name="City">
+                            <option value="Dnipro">Dnipro</option>
+                            <option value="Lviv">Lviv</option>
+                            <option value="Kyiv">Kyiv</option>
+                            <option value="Uzhgorod">Uzhgorod</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="addressStreet">
+                    <label>Address
+                        <textarea class="areaAddress" name="Address" rows="2" placeholder="Enter your address"></textarea>
+                    </label>
+                </div>
+                <div class="leng">
+                    <label>Languages
+                        <input type="checkbox" id="checkUA" class="checkLang" name="Language" value="ua">
+                        <label for="checkUA">UA</label>
+                        <input type="checkbox" id="checkEN" class="checkLang" name="Language" value="en">
+                        <label for="checkEN">EN</label>
+                        <input type="checkbox" id="checkDE" class="checkLang" name="Language" value="de">
+                        <label for="checkDE">DE</label>
+                    </label>
+                </div>
+            <button class="buttonSave" type="submit">Save</button>
+        </div>
+    </form>
+</div>
+<script src="form.js"></script>
+</body>
+</html>
