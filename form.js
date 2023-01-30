@@ -1,6 +1,6 @@
 const form = document.forms[0];
 const nameImput = document.getElementsByClassName('nameImput')[0];
-const SurnameImput = document.getElementsByClassName('SurnameImput')[0];
+const surnameImput = document.getElementsByClassName('surnameImput')[0];
 const dateImput = document.getElementsByClassName('dateImput')[0];
 const sexRadio = document.getElementsByClassName('radio')[0]
 const citySelect = document.querySelector('.selectCity');
@@ -18,9 +18,9 @@ function getForm(event) {
     document.body.append(container); 
     container.append(formTable);
 
-    let rowForm;
-    let cellForm;   
     for (i = 0; i < 7; i++){
+        let rowForm;
+        let cellForm;  
         rowForm = formTable.insertRow(i);
         for (j = 0; j < 2; j++){
             cellForm = rowForm.insertCell(j);
@@ -32,9 +32,9 @@ function getForm(event) {
     const cellOne = document.getElementsByTagName('td')[1];
     cellOne.innerText = nameImput.value;
     const cellTwo = document.getElementsByTagName('td')[2];
-    cellTwo.innerText = SurnameImput.getAttribute('name');
+    cellTwo.innerText = surnameImput.getAttribute('name');
     const cellThree = document.getElementsByTagName('td')[3];
-    cellThree.innerText = SurnameImput.value;
+    cellThree.innerText = surnameImput.value;
     const cellFour = document.getElementsByTagName('td')[4];
     cellFour.innerText = dateImput.getAttribute('name');
     const cellFive = document.getElementsByTagName('td')[5];
@@ -46,11 +46,11 @@ function getForm(event) {
     const sellEight = document.getElementsByTagName('td')[8];
     sellEight.innerText = citySelect.getAttribute('name');
     const sellNine = document.getElementsByTagName('td')[9];
-        if (citySelect.value.includes('selectCity')){
-            sellNine.innerText = '';
-        } else {
-            sellNine.innerText = citySelect.value;
-        }
+    if (citySelect.value.includes('selectCity')){
+        sellNine.innerText = '';
+    } else {
+        sellNine.innerText = citySelect.value;
+    }
     const sellTen = document.getElementsByTagName('td')[10]
     sellTen.innerText = textAddress.getAttribute('name');
     const sellEleven = document.getElementsByTagName('td')[11]
