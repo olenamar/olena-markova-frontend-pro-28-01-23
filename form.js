@@ -9,24 +9,20 @@ const lang = document.getElementsByClassName('checkLang')[0]
 const langCheck = document.getElementsByClassName('checkLang')
 const button = document.getElementsByTagName('button')[0];
 
-function getForm(event) {
+function getForm(event){
     event.preventDefault();
     document.getElementsByTagName('form')[0].hidden = true;
-   
     const formTable = document.createElement('table');
     const container = document.createElement('div');
     document.body.append(container); 
     container.append(formTable);
-
+    
     for (i = 0; i < 7; i++){
-        let rowForm;
-        let cellForm;  
-        rowForm = formTable.insertRow(i);
+        const rowForm = formTable.insertRow(i);
         for (j = 0; j < 2; j++){
-            cellForm = rowForm.insertCell(j);
+            rowForm.insertCell(j);
         }
     }
-
     const cellZero = document.getElementsByTagName('td')[0];
     cellZero.innerText = nameImput.getAttribute('name');
     const cellOne = document.getElementsByTagName('td')[1];
